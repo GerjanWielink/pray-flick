@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+			:root{
+				--primary: salmon;
+				--secondary: papayawhip;
+			}
+
+			#btwBTW {
+				width: 100vw;
+				height: 100vh;
+				background-color: var(--primary);
+				animation: flick 1.2s infinite;
+			}
+
+			@keyframes flick {
+				0% {background-color: var(--primary)}
+				50% {background-color: var(--secondary)}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="btwBTW"/>
+	</body>
+</html>
