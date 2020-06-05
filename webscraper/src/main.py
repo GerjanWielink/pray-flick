@@ -49,7 +49,7 @@ def writeTableToJson(filename: str, table: BeautifulSoup):
         json.dump(tasks_data, outfile, indent=2)
 
 
-masters = ["konar_quo_maten", "duradel"]
+masters = ["konar_quo_maten", "duradel", "nieve"]
 
 for master in masters:
     table = get_tasks_table(master)
