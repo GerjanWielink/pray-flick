@@ -1,0 +1,174 @@
+[
+  {
+    "monster": "Aberrant spectre",
+    "weight": "6"
+  },
+  {
+    "monster": "Abyssal demon",
+    "weight": "9"
+  },
+  {
+    "monster": "Adamant dragon",
+    "weight": "2"
+  },
+  {
+    "monster": "Ankou",
+    "weight": "5"
+  },
+  {
+    "monster": "Aviansie",
+    "weight": "6"
+  },
+  {
+    "monster": "Basilisk",
+    "weight": "6"
+  },
+  {
+    "monster": "Black demons",
+    "weight": "9"
+  },
+  {
+    "monster": "Black dragons",
+    "weight": "6"
+  },
+  {
+    "monster": "Bloodvelds",
+    "weight": "9"
+  },
+  {
+    "monster": "Blue dragons",
+    "weight": "4"
+  },
+  {
+    "monster": "Boss[1]",
+    "weight": "8"
+  },
+  {
+    "monster": "Brine rat",
+    "weight": "3"
+  },
+  {
+    "monster": "Cave horror",
+    "weight": "5"
+  },
+  {
+    "monster": "Cave kraken",
+    "weight": "6"
+  },
+  {
+    "monster": "Dagannoth",
+    "weight": "8"
+  },
+  {
+    "monster": "Dark beasts",
+    "weight": "5"
+  },
+  {
+    "monster": "Drakes",
+    "weight": "7"
+  },
+  {
+    "monster": "Dust devils",
+    "weight": "6"
+  },
+  {
+    "monster": "Elves",
+    "weight": "4"
+  },
+  {
+    "monster": "Fire giants",
+    "weight": "9"
+  },
+  {
+    "monster": "Fossil Island Wyverns",
+    "weight": "5"
+  },
+  {
+    "monster": "Gargoyles",
+    "weight": "6"
+  },
+  {
+    "monster": "Greater demons",
+    "weight": "7"
+  },
+  {
+    "monster": "Hellhounds",
+    "weight": "8"
+  },
+  {
+    "monster": "Iron dragons",
+    "weight": "5"
+  },
+  {
+    "monster": "Kalphites",
+    "weight": "9"
+  },
+  {
+    "monster": "Kurask",
+    "weight": "3"
+  },
+  {
+    "monster": "Lizardmen",
+    "weight": "8"
+  },
+  {
+    "monster": "Minions of Scabaras",
+    "weight": "4"
+  },
+  {
+    "monster": "Mithril dragons",
+    "weight": "5"
+  },
+  {
+    "monster": "Mutated Zygomites",
+    "weight": "2"
+  },
+  {
+    "monster": "Nechryael",
+    "weight": "7"
+  },
+  {
+    "monster": "Red dragons",
+    "weight": "5"
+  },
+  {
+    "monster": "Rune dragon",
+    "weight": "2"
+  },
+  {
+    "monster": "Skeletal Wyverns",
+    "weight": "5"
+  },
+  {
+    "monster": "Smoke devil",
+    "weight": "7"
+  },
+  {
+    "monster": "Spiritual creatures",
+    "weight": "6"
+  },
+  {
+    "monster": "Steel dragons",
+    "weight": "5"
+  },
+  {
+    "monster": "Suqah",
+    "weight": "8"
+  },
+  {
+    "monster": "Trolls",
+    "weight": "6"
+  },
+  {
+    "monster": "Turoth",
+    "weight": "3"
+  },
+  {
+    "monster": "TzHaar",
+    "weight": "10"
+  },
+  {
+    "monster": "Wyrms",
+    "weight": "7"
+  }
+]
