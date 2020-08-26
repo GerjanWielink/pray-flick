@@ -28,7 +28,7 @@ export default () => {
     const updateAverage = () => {
         const time = new Date().getTime();
 
-        const clickTime = time - lastClick;
+        const clickTime = Math.min(time - lastClick, 1200);
         setLastCLick(time)
 
         updateWalkingAverage((0.7 * walkingAverage) + (0.3 * clickTime))
