@@ -1,6 +1,14 @@
 import React, {useState} from 'react';
 import {Flicker, SpeedIndicator} from "../../components";
-import {useStyletron} from "baseui";
+import {styled, useStyletron} from "baseui";
+import {PrayerOrb} from "../../components/PrayerOrb";
+
+const PageLayout = styled('div', ({ $theme}) => ({
+    display: 'grid',
+    gridTemplateRows: '1fr 1fr',
+    gridRowGap: '20px',
+    placeItems: 'center'
+}))
 
 export default () => {
     const [lastClick, setLastCLick] =  useState<number>(new Date().getTime())
@@ -36,24 +44,18 @@ export default () => {
 
             enabled={Math.abs(walkingAverage - 600) > 30}
         >
-            <>
-                <div onClick={handleClick}
-                    style={{
-                        backgroundColor: prayerOn ? 'black' : 'white',
-                        padding: 10,
-                        borderRadius: '50%',
-                        height: 50,
-                        width: 50,
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
-                        marginBottom: '20px'
-                    }}
+            <PageLayout>
+                <PrayerOrb
+                    enabled={prayerOn}
+                    onClick={handleClick}
+                    size={'100px'}
                 />
+
                 <SpeedIndicator
                     goal={600}
                     speed={walkingAverage}
                 />
-            </>
+            </PageLayout>
         </Flicker>
     )
 }
