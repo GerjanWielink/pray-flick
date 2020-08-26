@@ -31,15 +31,15 @@ const SpeedIndicator = ({ speed, goal } : Props) => {
             })}
         >
             <BarLayer className={css({
-                width: '50%',
-                left: '25%',
+                width: '30%',
+                left: '35%',
                 position: "absolute",
                 backgroundColor: theme.colors.warning300,
             })} />
 
             <BarLayer className={css({
-                width: '10%',
-                left: '45%',
+                width: '5%',
+                left: '47.5%',
                 position: 'absolute',
                 backgroundColor: theme.colors.positive300
             })} />

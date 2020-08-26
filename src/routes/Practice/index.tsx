@@ -34,7 +34,7 @@ export default () => {
                 textAlign: "center"
             })}
 
-            enabled={Math.abs(walkingAverage - 600) > 60}
+            enabled={Math.abs(walkingAverage - 600) > 30}
         >
             <>
                 <div onClick={handleClick}
