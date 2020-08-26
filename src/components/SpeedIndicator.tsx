@@ -3,7 +3,6 @@ import {styled, useStyletron} from "baseui";
 
 type Props = {
     speed: number,
-    range: number,
     goal: number
 }
 
@@ -14,44 +13,45 @@ const BarLayer = styled('div', {
     justifyContent: 'center'
 })
 
-const SpeedIndicator = ({ speed, range, goal} : Props) => {
+const SpeedIndicator = ({ speed, goal } : Props) => {
     const [css, theme] = useStyletron()
 
-    const effectiveSpeed = Math.min(Math.max((goal - range), speed), goal + range)
+    const effectiveSpeed = Math.min(speed, 2 * goal)
 
-    const position = (((effectiveSpeed / goal) / 2) * 100).toFixed(0)
+    const position = (((effectiveSpeed / goal) / 2) * 100)
 
-    console.log({
-        effectiveSpeed,
-        position
-    })
 
     return (
         <BarLayer
             className={css({
                 width: '100%',
                 minWidth: '400px',
-                backgroundColor: theme.colors.primary,
+                backgroundColor: theme.colors.negative300,
                 position: "relative"
             })}
         >
             <BarLayer className={css({
                 width: '50%',
-                backgroundColor: theme.colors.warning,
-            })}>
-                <BarLayer className={css({
-                    width: '20%',
-                    backgroundColor: theme.colors.accent400
-                })}>
-                    <BarLayer className={css({
-                        width: '2px',
-                        background: 'black',
-                        position: 'absolute',
-                        left: `${position}%`,
-                        transition: 'all .5s'
-                    })} />
-                </BarLayer>
-            </BarLayer>
+                left: '25%',
+                position: "absolute",
+                backgroundColor: theme.colors.warning300,
+            })} />
+
+            <BarLayer className={css({
+                width: '10%',
+                left: '45%',
+                position: 'absolute',
+                backgroundColor: theme.colors.positive300
+            })} />
+
+            <BarLayer className={css({
+                width: '2px',
+                background: 'black',
+                position: 'absolute',
+                left: `${Math.abs(position - 100)}%`,
+                transition: 'all 1s'
+            })} />
+
         </BarLayer>
     )
 }
